@@ -111,8 +111,9 @@ body {
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   display:flex;
-  justify-content: space-between;
+  justify-content:space-between;
   font-weight: 700;
+  background-color: dark-grey;
 }
 
 .div-1, .div-2, .div-3 {
@@ -123,12 +124,23 @@ body {
   align-items: center;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1em;
+  background-color: /*#f16059;*/ #000000;
   height: 300px;
+  text-align:center;
+  padding:0.75em;
 }
 
+.div-2{
+  border-left: 1.5px solid grey;
+  border-right: 1.5px solid grey;
+}
 
+@media screen and (max-width:786px){
+  .div-1, .div-2, .div-3{
+    font-size: 0.75em;
+  }
+}
 
 
 /* ==========================================================================
